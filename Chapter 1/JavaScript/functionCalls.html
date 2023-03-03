@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+    <script>
+    	function a() {
+    		document.write("a() was called.<br />");
+    		b();
+    		document.write("a() is returning.<br />");
+    	}
+    	
+    	function b() {
+    		document.write("b() was called.<br />");
+    		c();
+    		document.write("b() is returning.<br />");
+    	}
+    	
+    	function c() {
+    		document.write("c() was called.<br />");
+    		document.write("c() is returning.<br />");
+    	}
+    	
+    	a();
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
