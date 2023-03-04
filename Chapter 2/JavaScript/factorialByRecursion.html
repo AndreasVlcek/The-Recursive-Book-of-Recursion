@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+    <script>
+		function factorial(number) {
+			if (number === 1) {
+				// BASE CASE
+				return 1;
+			} else {
+				// RECURSIVE CASE
+				return number * factorial(number - 1);
+			}
+		}
+		
+		document.write(factorial(5));
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
