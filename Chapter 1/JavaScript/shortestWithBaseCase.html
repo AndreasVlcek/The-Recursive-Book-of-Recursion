@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+    <script>
+    	function shortestWithBaseCase(makeRecursiveCall) {
+    		document.write("shortestWithBaseCase(" + makeRecursiveCall + ") called.<br />");
+    		if (makeRecursiveCall === false) {
+    			// BASE CASE
+    			document.write("Returning from base case.<br />");
+    			return;
+    		} else {
+    			// RECURSIVE CASE
+    			shortestWithBaseCase(false);
+    			document.write("Returning from recursive case.<br />");
+    			return;
+    		}
+    	}
+    	
+    	document.write("Calling shortestWithBaseCase(false):<br />");
+    	shortestWithBaseCase(false);
+    	document.write("<br />");
+    	document.write("Calling shortestWithBaseCase(true):<br />");
+    	shortestWithBaseCase(true);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
