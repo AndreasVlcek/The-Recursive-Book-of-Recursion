@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+    <script>
+		function fibonacci(nthNumber) {
+			let a = 1, b = 1;
+			let nextNum;
+			document.write('a = ' + a + ', b = ' + b + '<br />');
+			
+			for (let i = 1; i < nthNumber; i++) {
+				nextNum = a + b; // Get the next Fibonacci number.
+				a = b;
+				b = nextNum;
+				document.write('a = ' + a + ', b = ' + b + '<br />');
+			}
+			return a;
+		}
+		
+		document.write(fibonacci(10));
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
