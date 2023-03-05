@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+    <script>
+		function fibonacci(nthNumber) {
+			document.write('fibonacci(' + nthNumber + ') called.<br />');
+			
+			if (nthNumber === 1 || nthNumber === 2) {
+				// BASE CASE
+				document.write('fibonacci(' + nthNumber + ') called.<br />');
+				return 1;
+			} else {
+				// RECURSIVE CASE
+				document.write('Calling fibonacci(' + (nthNumber - 1) + ') and fibonacci(' 
+				+  (nthNumber - 2) + ').<br />');
+				let result = fibonacci(nthNumber - 1) + fibonacci(nthNumber - 2);
+				document.write('Call to fibonacci(' + nthNumber + ') returning ' + result
+				+ '.<br />');
+				return result;
+			}
+		}		
+		document.write(fibonacci(10) + '<br />');
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
