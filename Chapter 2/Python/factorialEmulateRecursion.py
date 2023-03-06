@@ -4,7 +4,6 @@ returnValue = None
 
 while len(callStack) > 0:
 	# The body of the "factorial() function":
-	
 	number = callStack[-1]['number'] # Set number parameter.
 	returnAddr = callStack[-1]['returnAddr']
 	
