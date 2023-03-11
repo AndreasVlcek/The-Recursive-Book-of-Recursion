@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+    <script>
+		function exponentByIteration(a, n) {
+			let result = 1;
+			for (let i = 0; i < n; i++) {
+				result *= a;
+			}
+			return result;
+		}
+		
+		document.write(exponentByIteration(3, 6) + "<br/ >");
+		document.write(exponentByIteration(10, 3) + "<br/ >");
+		document.write(exponentByIteration(17, 10) + "<br/ >");
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
